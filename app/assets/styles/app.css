@@ -1,7 +1,7 @@
 
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One|Josefin+Sans:400,600');
+@import "base/_global";
 
-
-#quote__display {
-	text-align: center;
-	margin: 15% auto;
-}
+@import "modules/_quote";
+@import "modules/_btn";
