@@ -5,6 +5,7 @@ html {
 	font-size: 10px;
 	font-family: 'Bubbler One', sans-serif;
 	transition: all 1s ease-out;
+	background-color: #9D2D28;
 }
 
 *, *:after, *:before {
@@ -13,7 +14,6 @@ html {
 
 
 a {
-	text-decoration: none;
-	color: orange;
+	text-decoration: none;	
 }
 

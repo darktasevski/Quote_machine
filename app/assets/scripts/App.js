@@ -32,8 +32,12 @@
 	    	// dynamic changing the color of text based on background color
 	     if(currentColor > 125) {
         $('html').css('color', 'black');
+        $('.quote__author').css('color', 'black');
+        $('#quote__button').css('color', 'black');
 	    }else{ 
 	        $('html').css('color', 'white');
+	        $('.quote__author').css('color', 'white');
+	        $('#quote__button').css('color', 'white');
 	    }
 	    return 'rgb(' + red + ', ' + green + ', ' + blue + ')'; // spaces are important
 	}

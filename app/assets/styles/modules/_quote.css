@@ -1,4 +1,21 @@
 
+.title {
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 300;
+	letter-spacing: .2rem;
+	font-family: 'Josefin Sans', sans-serif;
+	display: block;
+	position: absolute;
+	max-width: 900px;
+	height: auto;
+	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;  /* center positioning for absolute element */
+	right: 0;
+}
+
 .container {
 	position: relative;
 	border-radius: 2rem;
