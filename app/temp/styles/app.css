@@ -366,6 +366,7 @@ html {
 	font-family: 'Bubbler One', sans-serif;
 	-webkit-transition: all 1s ease-out;
 	transition: all 1s ease-out;
+	background-color: #9D2D28;
 }
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -396,11 +397,12 @@ a {
 #quote__button {
 	display: block;
 	margin: 0 auto;
-    width: 40%;
+    width: 30%;
 	border: 1px solid black;
 	border-radius: 1rem;
-	padding: 1rem;
+	padding: .7rem;
 	text-align: center;
+	background-color: #7ac1e4;
 }
 .bg{
 	  overflow:hidden;
