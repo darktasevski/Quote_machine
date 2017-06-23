@@ -59,12 +59,12 @@
 }
 @-webkit-keyframes cloud {
     0%   { left: -100px; }
-    100% { left: 1750px; } 
+    100% { left: 100%; } 
 }
 @keyframes cloud {
    
     0%   { left: -100px; }
-    100% { left: 1750px; } 
+    100% { left: 100%; } 
 }
 .cloud:before {
   content: '';
