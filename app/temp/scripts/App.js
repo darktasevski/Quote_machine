@@ -96,7 +96,8 @@ function randomColor() {
 	var red = Math.floor(Math.random() * 256);
 	var blue = Math.floor(Math.random() * 256);
 
-	rgbArr = [red, green, blue];
+	var rgbArr = [red, green, blue];
+	console.log(rgbArr);
 	var currentColor = Math.round((parseInt(rgbArr[0]) * 299 + parseInt(rgbArr[1]) * 587 + parseInt(rgbArr[2]) * 114) / 1000);
 	// dynamic changing the color of text based on background color
 	if (currentColor > 125) {

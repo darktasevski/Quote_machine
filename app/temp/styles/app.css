@@ -499,29 +499,29 @@ a {
 }
 .cloud2 { 
   bottom: 300px;
-  -webkit-animation: cloud2 50s infinite linear;
-          animation: cloud2 50s infinite linear;
+  -webkit-animation: cloud2 60s infinite linear;
+          animation: cloud2 60s infinite linear;
 }
 @-webkit-keyframes cloud2 {
-    0%   { left: -500px; }
+    0%   { left: -550px; }
     100% { left: 100%; } 
 }
 @keyframes cloud2 {
    
-    0%   { left: -500px; }
+    0%   { left: -550px; }
     100% { left: 100%; } 
 }
 .cloud3 { 
   bottom: 75%;
-  -webkit-animation: cloud3 50s infinite linear;
-          animation: cloud3 50s infinite linear;
+  -webkit-animation: cloud3 70s infinite linear;
+          animation: cloud3 70s infinite linear;
 }
 @-webkit-keyframes cloud3 {
-    0%   { left: -450px; }
+    0%   { left: -850px; }
     100% { left: 100%; } 
 }
 @keyframes cloud3 {
    
-    0%   { left: -450px; }
+    0%   { left: -850px; }
     100% { left: 100%; } 
 }

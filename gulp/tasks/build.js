@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
 browserSync	 = require('browser-sync').create(),
-imagemin = require('gulp-imagemin'),
 cssNano	 = require('gulp-cssnano'),
 usemin 	 = require('gulp-usemin'),
 uglify	 = require('gulp-uglify'),
@@ -11,32 +10,22 @@ gulp.task('previewDist', function(){
 
 	browserSync.init({
 		server: {
-			baseDir: 'docs'
+			baseDir: 'docs',
+			index: 'app.html'
 		}
 	})
 
 });
 
-gulp.task('deleteDist',['icons'], function(){ // delete dist folder everytime before starting distributing files in it.
+gulp.task('deleteDist', function(){ // delete dist folder everytime before starting distributing files in it.
 	return del('./docs')
 });
 
 
-gulp.task('optimizeImages',['deleteDist'], function(){
-	return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons', '!./app/assets/images/icons/**/*', '!./app/assets/images/*-i.jpg',])
-		.pipe(imagemin({ // compressing images 
-			progressive: true,  // this will optimize jpg images
-			interlaced: true,	// this will help optimizing gif images
-			multipass: true 	// this will help with svg files
-
-		}))
-		.pipe(gulp.dest('./docs/assets/images'));
-});
-
 gulp.task('copyGeneralFiles', ['deleteDist'], function(){
 	var pathsToCopy = [
 		'./app/**/*',
-		'!./app/index.html',
+		'!./app/app.html',
 		'!./app/assets/**',
 		'!./app/assets/styles/**',
 		'!./app/assets/scripts/**',
@@ -52,7 +41,7 @@ gulp.task('useminTrigger', ['deleteDist'], function(){
 });
 
 gulp.task('usemin', ['styles', 'scripts'], function(){
-	return gulp.src('./app/index.html')
+	return gulp.src('./app/app.html')
 		.pipe(usemin({
 			css: [ function(){return rev()}, function(){ return cssNano()}],
 			js: [ function(){return rev()}, function(){ return uglify()}]
@@ -61,6 +50,6 @@ gulp.task('usemin', ['styles', 'scripts'], function(){
 });
 
 
-gulp.task('build', ['deleteDist', 'copyGeneralFiles', 'optimizeImages', 'useminTrigger'], function(){
+gulp.task('build', ['deleteDist', 'copyGeneralFiles', 'useminTrigger'], function(){
 
 })
