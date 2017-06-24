@@ -408,6 +408,7 @@ a {
 .quote__author {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 2.4rem;
+	color: #d9d565;
 }
 #quote__button {
 	display: block;

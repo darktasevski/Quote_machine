@@ -7,7 +7,6 @@
     <!-- build:css assets/styles/css.css  -->
     <link rel="stylesheet" type="text/css" href="./temp/styles/app.css">
     <!-- endbuild -->
-
     <!-- build:js assets/scripts/Vendor.js -->
     <script type="text/javascript" src="/temp/scripts/Vendor.js"></script>
     <!-- endbuild -->
@@ -18,10 +17,14 @@
         <h2 class="title">Daily dose of wisdom and motivation!</h2>
         <div class="container">
             <div id="quote__display">
-                <p class="quote__text">Do not be embarrassed by your mistakes. Nothing can teach us better than our understanding of them. This is one of the best ways of self-education.</p>
+                <p class="quote__text" id="quote">Do not be embarrassed by your mistakes. Nothing can teach us better than our understanding of them. This is one of the best ways of self-education.</p>
                 <a id="quote__wiki" href="#" target="_blank" title="Learn more about the author!"><span class="quote__author">Thomas Carlyle</span></a>
             </div>
             <a href="#" id="quote__button">Click for quote</a>
+            <!-- Twitter buttons -->
+            <a id="twitter" class="twitter-share-button" href="#" data-url="" data-text="">Tweet</a>
+            <a class="twitter-follow-button" href="https://twitter.com/Puritanicall" data-show-count="false">Follow @Puritanicall</a>
+            <!-- Twitter buttons end -->
         </div>
         <div class="mountain">
             <div class="mountain-top">
@@ -48,10 +51,23 @@
         <div class="cloud cloud2"></div>
         <div class="cloud cloud3"></div>
     </div>
+   <!--  <script>
+    ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+    </script> -->
+    <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- build:js assets/scripts/App.js -->
     <script type="text/javascript" src="./temp/scripts/App.js"></script>
     <!-- endbuild -->
+    <!-- Twitter script -->
 </body>
 
 </html>
