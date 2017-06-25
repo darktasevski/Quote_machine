@@ -3,9 +3,10 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 10px;
-	font-family: 'Bubbler One', sans-serif;
-	transition: all 1s ease-out;
+	font-family: 'Spectral', serif;
+	transition: background 1s ease-out;
 	background-color: #9D2D28;
+	font-weight: 400;
 }
 
 *, *:after, *:before {

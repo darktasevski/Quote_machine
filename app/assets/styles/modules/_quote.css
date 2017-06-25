@@ -1,10 +1,14 @@
 
+#quote__display {
+	min-height: 230px;
+}
+
 .title {
 	text-align: center;
 	font-size: 4rem;
 	font-weight: 300;
 	letter-spacing: .2rem;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Spectral', serif;
 	display: block;
 	position: absolute;
 	max-width: 900px;
@@ -22,7 +26,7 @@
 	display: block;
 	margin: 12% auto;
 	font-size: 3rem;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 140%;
 	letter-spacing: .1rem;
 	padding: 4rem;
@@ -32,7 +36,7 @@
 }
 
 .quote__author {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Spectral', serif;
 	font-size: 2.4rem;
 	color: #d9d565;
 }

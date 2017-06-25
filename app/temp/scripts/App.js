@@ -73,11 +73,11 @@
 $(document).ready(function () {
 
     $('#quote__button').on('click', function (ev) {
-        $.getJSON("http://www.quotzzy.co/api/quote").done(update).fail(handleErr);
+        $.getJSON("https://www.quotzzy.co/api/quote").done(update).fail(handleErr);
     });
 
     $('#twitter').on('click', function () {
-        window.open("https://twitter.com/intent/tweet?text=" + $("#quote").text() + " - " + $(".quote__author").text());
+        window.open("https://twitter.com/intent/tweet?text=" + $("#quote").text().substring(0, 130) + " - " + $(".quote__author").text() + " @Puritanicall");
     });
 
     function update(response) {
@@ -106,12 +106,12 @@ $(document).ready(function () {
         // dynamic changing the color of text based on background color
         if (currentColor > 125) {
             $('html').css('color', 'black');
-            $('.quote__author').css('color', 'black');
-            $('#quote__button').css('color', 'black');
+            $('.quote__author').css('color', '#6D73C2');
+            $('#quote__button').css('color', '#022933');
         } else {
             $('html').css('color', 'white');
-            $('.quote__author').css('color', 'white');
-            $('#quote__button').css('color', 'white');
+            $('.quote__author').css('color', '#FFB12F');
+            $('#quote__button').css('color', '#EEE8D6');
         }
         return 'rgb(' + red + ', ' + green + ', ' + blue + ')'; // spaces are important
     }

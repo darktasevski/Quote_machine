@@ -57,7 +57,7 @@
 	border-radius: 100px / 50px;
 }
 .cloud1 { 
-  bottom: 100px;
+  bottom: 25%;
   -webkit-animation: cloud1 50s infinite linear;
           animation: cloud1 50s infinite linear;
 }
@@ -81,7 +81,7 @@
 }
 
 .cloud2 { 
-  bottom: 300px;
+  bottom: 10%;
   -webkit-animation: cloud2 60s infinite linear;
           animation: cloud2 60s infinite linear;
 }
