@@ -1,0 +1,43 @@
+
+#quote__display {
+	min-height: 230px;
+}
+.title__container {
+	display: block;
+	position: relative;
+	max-width: 900px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 3rem;
+}
+.title {
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: .2rem;
+	font-family: 'Spectral', serif;
+	display: block;
+	max-width: 900px;
+	height: auto;
+}
+
+.container {
+	position: relative;
+	display: block;
+	margin: 8% auto;
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 140%;
+	letter-spacing: .1rem;
+	padding: 4rem;
+	min-height: 400px;
+	width: 940px; 
+    height: auto;
+    overflow: initial;
+}
+
+.quote__author {
+	font-family: 'Spectral', serif;
+	font-size: 2.4rem;
+	color: #d9d565;
+}
