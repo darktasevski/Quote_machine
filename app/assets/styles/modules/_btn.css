@@ -10,6 +10,10 @@
 	text-align: center;
 	background: rgba(0, 0, 0, .2);
 	transition: all .3s ease-out;
+
+	@mixin atSmall {
+		
+	}
 }
 #quote__button:hover {
 	transform: scale(1.1);
