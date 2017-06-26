@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $('#quote__button').on('click', function(ev) {
-        $.getJSON("https://www.quotzzy.co/api/quote")
+        $.getJSON("http://www.quotzzy.co/api/quote")
             .done(update)
             .fail(handleErr);
     });

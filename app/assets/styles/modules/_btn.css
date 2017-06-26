@@ -2,11 +2,15 @@
 	display: block;
 	font-family: 'Raleway', sans-serif;
 	margin: 0 auto;
-    width: 30%;
+    width: 25%;
 	border: 1px solid black;
 	border-radius: 1rem;
 	padding: .7rem;
 	font-size: 2.3rem;
 	text-align: center;
-	background-color: #7ac1e4;
+	background: rgba(0, 0, 0, .2);
+	transition: all .3s ease-out;
+}
+#quote__button:hover {
+	transform: scale(1.1);
 }

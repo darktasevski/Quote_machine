@@ -364,8 +364,8 @@ html {
 	        box-sizing: border-box;
 	font-size: 10px;
 	font-family: 'Spectral', serif;
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;
+	-webkit-transition: background 1s ease-out;
+	transition: background 1s ease-out;
 	background-color: #9D2D28;
 	font-weight: 400;
 }
@@ -418,13 +418,19 @@ a {
 	display: block;
 	font-family: 'Raleway', sans-serif;
 	margin: 0 auto;
-    width: 30%;
+    width: 25%;
 	border: 1px solid black;
 	border-radius: 1rem;
 	padding: .7rem;
 	font-size: 2.3rem;
 	text-align: center;
-	background-color: #7ac1e4;
+	background: rgba(0, 0, 0, .2);
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+#quote__button:hover {
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 .bg{
 	  overflow:hidden;
