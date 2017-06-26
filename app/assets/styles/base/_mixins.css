@@ -23,3 +23,17 @@
         display: table;
     }
 }
+
+@define-mixin clearfixOverflow {
+    &::before,
+    &::after {
+        content: ".";    
+        display: block;    
+        height: 0;    
+        overflow: hidden;
+    }
+
+    &::after {
+        clear: both;
+    }
+}

@@ -379,27 +379,28 @@ a {
 #quote__display {
 	min-height: 230px;
 }
+.title__container {
+	display: block;
+	position: relative;
+	max-width: 900px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 3rem;
+}
 .title {
 	text-align: center;
-	font-size: 4rem;
 	font-weight: 300;
 	letter-spacing: .2rem;
 	font-family: 'Spectral', serif;
 	display: block;
-	position: absolute;
 	max-width: 900px;
 	height: auto;
-	margin-top: 4rem;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;  /* center positioning for absolute element */
-	right: 0;
 }
 .container {
 	position: relative;
-	border-radius: 2rem;
 	display: block;
-	margin: 12% auto;
+	margin: 8% auto;
 	font-size: 3rem;
 	font-weight: 500;
 	line-height: 140%;
@@ -408,6 +409,7 @@ a {
 	min-height: 400px;
 	width: 940px; 
     height: auto;
+    overflow: initial;
 }
 .quote__author {
 	font-family: 'Spectral', serif;
@@ -428,6 +430,8 @@ a {
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
 }
+@media (min-width: 530px) {
+    }
 #quote__button:hover {
 	-webkit-transform: scale(1.1);
 	        transform: scale(1.1);
