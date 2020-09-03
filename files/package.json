@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.2.1",
-    "lazysizes": "^4.0.0-rc1",
+    "lazysizes": "^5.2.2",
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
